@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="firstName" class="label">First Name: </label><input type="text" id="firstName"><br>
+        <label for="LastName" class="label">Last Name: </label><input type="text" id="lastName"><br>
+        <label for="password" class="label">Password: <input type="password" id="password"></label><br>
+        <label>Web Design:</label>
+        <label for="ind" class="label">Individual </label>
+        <input type="radio" id="ind" name="design" value="">
+        <label for="temp" class="label">Template</label>
+        <input type="radio" id="temp" name="design" value=""><br>
+        <label>Web Development:</label>
+        <label for="html" class="label">HTML &amp; CSS</label>
+        <input type="checkbox" id="html" name="HTML & CSS" value="">
+        <label for="js" class="label">JavaScript</label>
+        <input type="checkbox" id="js" name="JavaScript" value="">
+        <label for="mDB" class="label">MongoDB</label>
+        <input type="checkbox" id="mDB" name="MongoDB" value="">
+        </label>
+        <br>
+        <button type="submit" onclick="userData()">Submit</button>
+    </form>
+    <script>
+        const formRes = document.querySelectorAll("input");
+        const result = [];
+        function userData() {
+            formRes.forEach((ele, i) => {
+                ele = `${document.querySelectorAll(".label")[i].textContent} ${ele.value}`;
+                result.push(ele)
+            })
+            alert(result.join(", \n"));
+        }
+    </script>
+</body>
+
+</html>
