@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling (Default)</title>
+    <style>
+        div {
+            padding: 1em;
+            border: solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Bubbling</h1>
+
+    <div onclick="handle1()">1
+        <div onclick="handle2()">2
+            <div onclick="handle3()">3
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function handle1() {
+            console.log("handle 1");
+        }
+        function handle2() {
+            console.log("handle 2");
+        }
+        function handle3() {
+            console.log("handle 3");
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling (Default)</title>
+    <style>
+        div {
+            padding: 1em;
+            border: solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Bubbling</h1>
+
+    <div id="div1">1
+        <div id="div2">2
+            <div id="div3">3
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const div1 = document.querySelector("#div1");
+        div1.addEventListener('click', handle1);
+
+        const div2 = document.querySelector("#div2");
+        div2.addEventListener('click', handle2a);
+        div2.addEventListener('click', handle2b);
+
+        const div3 = document.querySelector("#div3");
+        div3.addEventListener('click', handle3);
+
+        function handle1() {
+            console.log("handle 1");
+        }
+        function handle2a() {
+            console.log("handle 2a");
+            event.stopImmediatePropagation();
+        }
+        function handle2b() {
+            console.log("handle 2b");
+        }
+        function handle3() {
+            console.log("handle 3");
+        }
+    </script>
+
+</body>
+
+</html>
