@@ -1,0 +1,7 @@
+li {
+    display: inline-block;
+    width: 200px;
+    padding: 20px;
+    background-color: rgb(187, 255, 255);
+    border: 1px solid gainsboro;
+}
