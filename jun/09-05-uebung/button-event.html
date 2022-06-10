@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="width: 50px; height: 50px;background-color: blue;position: absolute;"></div>
+
+    <script>
+        const box = document.querySelector("div");
+        document.addEventListener("keydown", keyPress);
+
+        function keyPress(event) {
+            const currentTop = parseInt(box.style.top) || 0;
+            const currentLeft = parseInt(box.style.left) || 0;
+            console.log(event.key)
+            if (event.key == "ArrowUp") {
+                const newTop = currentTop - 10;
+                box.style.top = newTop + "px";
+            } else if (event.key == "ArrowDown") {
+                const newTop = currentTop + 10;
+                box.style.top = newTop + "px";
+            } else if (event.key == "ArrowLeft") {
+                const newLeft = currentLeft - 10;
+                box.style.left = newLeft + "px";
+            } else if (event.key == "ArrowRight") {
+                const newLeft = currentLeft + 10;
+                box.style.left = newLeft + "px";
+            }
+        }
+    </script>
+</body>
+
+</html>
