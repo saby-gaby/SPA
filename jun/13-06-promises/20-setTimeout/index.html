@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const heading=document.createElement("h1");
+        heading.style.fontFamily="monospace";
+        document.body.appendChild(heading)
+        let text="";
+
+        function writeS(){
+            text+="S";
+            heading.textContent = text;
+        };
+
+        function writeA(){
+            text+="a";
+            heading.textContent = text;
+        };
+
+        function writeB(){
+            text+="b";
+            heading.textContent = text;
+        };
+
+        function writeI(){
+            text+="i";
+            heading.textContent = text;
+        };
+
+        function writeN(){
+            text+="n";
+            heading.textContent = text;
+        };
+
+        setTimeout(writeS,1000)
+        setTimeout(writeA,1150)
+        setTimeout(writeB,1300)
+        setTimeout(writeI,1450)
+        setTimeout(writeN,1600)
+        setTimeout(writeA,1750)
+    </script>
+</body>
+</html>

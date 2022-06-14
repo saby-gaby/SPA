@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const questPromise = new Promise(askQuestion);
+
+        function askQuestion(resolve,reject){
+            const response = confirm("Ist es heute Heiligabend?");
+            response?resolve():reject();
+        }
+
+        questPromise.then(()=>alert("Richtig"));
+        questPromise.catch(()=>alert("Falsch"));
+    </script>
+</body>
+</html>
