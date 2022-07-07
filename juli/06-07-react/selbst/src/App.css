@@ -8,3 +8,11 @@
     height: 5rem;
     margin: auto;
 }
+
+button{
+    background-color: rgba(137, 43, 226, 0.5);
+    display: block;
+    width: 100px;
+    margin: auto;
+    padding: 0.5rem;
+}

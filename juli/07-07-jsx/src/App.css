@@ -1,0 +1,54 @@
+.twitter-blue{
+    color: #1DA1F2 ;
+    text-align: center;
+}
+
+.logo { 
+    display: block;
+    height: 5rem;
+    margin: auto;
+}
+
+button{
+    background-color: rgba(137, 43, 226, 0.5);
+    display: block;
+    width: 100px;
+    margin: auto;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+h2 {
+    max-width: 500px;
+    margin: auto;
+}
+
+.post {
+    background-color: lightgray;
+    max-width: 500px;
+    border-radius: 0.5rem;
+    border: 1px dotted gray;
+    margin: 5px auto;
+    padding: 0;
+}
+
+.post>p:first-child{
+    color: #1DA1F2;
+    padding-left: 0.5rem;
+    margin: 0.25rem  0 0 0;
+    border-bottom: 1px dotted gray;
+}
+
+.post>p:last-child{
+    color: gray;
+    padding-left: 0.5rem;
+    border-top: 1px dotted gray;
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+.post>p:nth-child(2){
+    padding: 0.5rem;
+    background-color: rgb(235, 234, 234);
+    margin: 0;
+}
