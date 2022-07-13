@@ -11,7 +11,10 @@ function Timeline() {
     });
 
     return (
-        <div>{posts}</div>
+        <>
+            <h2>Posts</h2>
+            <div className='posts'>{posts}</div>
+        </>
     )
 }
 

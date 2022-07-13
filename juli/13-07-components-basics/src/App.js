@@ -3,6 +3,7 @@ import "./App.scss";
 import {Button} from 'react-bootstrap'
 import gezwitscher from "./gezwitscher.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header/Header'
 import Timeline from './components/Timeline/Timeline'
 
 function App() {
@@ -11,9 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <img src="images/birdy.png" className="logo" alt="logo" />
-      <h1 className="twitter-blue">Zwitscher</h1>
-      <h2>Posts</h2>
+      <Header />
       <Timeline />
       <Button variant="info">Click</Button>
     </div>
