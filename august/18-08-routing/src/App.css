@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.nav{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.projects{
+  display: flex;
+  flex-flow: column nowrap;
+}
