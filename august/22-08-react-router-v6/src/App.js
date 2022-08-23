@@ -39,8 +39,7 @@ function App() {
             <Route path="/beauty" element={<Beauty />} />
             <Route path="/health" element={<Health />} />
             <Route path="/wellness" element={<Wellness />} />
-            <Route path="*" element={<Page404 />}>
-            </Route>
+            <Route path="*" element={<Page404 />} />
           </Routes>
         </main>
       </Router>
